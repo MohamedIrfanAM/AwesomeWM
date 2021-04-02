@@ -1,3 +1,4 @@
+-- AwesomeWM Config by @MohamedIrfanAM on github https://github.com/MohamedIrfanAM/AwesomeWM
 local awesome, client, mouse, screen, tag = awesome, client, mouse, screen, tag
 local ipairs, string, os, table, tostring, tonumber, type = ipairs, string, os, table, tostring, tonumber, type
 
