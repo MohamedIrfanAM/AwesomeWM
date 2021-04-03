@@ -32,6 +32,13 @@ make package
 sudo apt install *.deb
 ```
 
+## Clone config
+
+```
+git clone https://github.com/MohamedIrfanAM/AwesomeWM.git ~/.config/awesome/
+
+```
+
 ## Dependencies
 
 ##### Dmenu-distrotube
@@ -79,7 +86,7 @@ git clone https://gitlab.com/dwt1/dmscripts.git /.dmenu/
 
 ```
 
-### Key Bindings
+## Key Bindings
 
 **• Awesome**
 
