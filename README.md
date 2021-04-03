@@ -167,7 +167,11 @@ super + alt + hjkl -- move in all four direction
 
 right-click to remove notification and left to take that notification
 
-**• Tags**
+• Pop UP
+
+right-click to remove notification and left to take that notification
+
+• Tags
 
 mod + tab -- next tag
 
@@ -203,7 +207,7 @@ Shift + alt + jk -- increase/decrease no. of columns
 
 super +ctrl + return -- move focused to master
 
-• Volume and Brightness
+**• Volume and Brightness**
 
 Volume up, volume down to adjust volume(alsa mixer)
 
