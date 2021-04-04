@@ -3,9 +3,10 @@
 My Awesome window manager config.
 It idles around _**250mb**_ of RAM
 
+![AwesomeWM-desktop](./utils/images/Awesome-desktop.png)
 ![Awesome](./utils/images/Awesome.png)
 ![AwesomeWM](./utils/images/Awesome-nvim.png)
-![AwesomeWM-desktop](./utils/images/Awesome-desktop.png)
+
 
 ## Install AwesomeWM
 
