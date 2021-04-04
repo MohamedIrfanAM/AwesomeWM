@@ -1,6 +1,8 @@
 # AwesomeWM
 
-My Awesome window manager config
+My Awesome window manager config.
+It idles around _**250mb**_ of RAM
+
 ![Awesome](./utils/images/Awesome.png)
 ![AwesomeWM](./utils/images/Awesome-nvim.png)
 ![AwesomeWM-desktop](./utils/images/Awesome-desktop.png)
@@ -174,11 +176,8 @@ super + alt + hjkl -- move in all four direction
 
 right-click to remove notification and left to take that notification
 
-• Pop UP
 
-right-click to remove notification and left to take that notification
-
-• Tags
+**• Tags**
 
 mod + tab -- next tag
 
