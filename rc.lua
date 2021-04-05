@@ -902,7 +902,6 @@ awful.rules.rules = {
           "Peek",
           "Skype",
           "System-config-printer.py",
-          "Sxiv",
           "Unetbootin.elf",
           "Wpa_gui",
           "pinentry",
