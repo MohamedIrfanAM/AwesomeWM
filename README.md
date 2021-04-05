@@ -1,12 +1,11 @@
 # AwesomeWM
 
 My Awesome window manager config.
-It idles around _**250mb**_ of RAM
+It idles around _**250mb - 350mb**_ of RAM
 
 ![AwesomeWM-desktop](./utils/images/Awesome-desktop.png)
 ![Awesome](./utils/images/Awesome.png)
 ![AwesomeWM](./utils/images/Awesome-nvim.png)
-
 
 ## Install AwesomeWM
 
@@ -176,7 +175,6 @@ super + alt + hjkl -- move in all four direction
 **• Pop UP**
 
 right-click to remove notification and left to take that notification
-
 
 **• Tags**
 
