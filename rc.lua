@@ -897,6 +897,7 @@ awful.rules.rules = {
           "Imagewriter",
           "Font-manager",
           "Kruler",
+          "krunner",
           "MessageWin",  -- kalarm.
           "Oblogout",
           "Peek",
