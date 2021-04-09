@@ -499,9 +499,9 @@ globalkeys = my_table.join(
     -- awful.key({ altkey, "Shift" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
     --           {description = "decrease the number of columns", group = "layout"}),
 
-    awful.key({ modkey1 }, "Tab", function () awful.layout.inc( 1)                end,
+    awful.key({ modkey1,altkey }, "space", function () awful.layout.inc( 1)                end,
               {description = "select next", group = "layout"}),
-    awful.key({ modkey1, "Shift"   }, "Tab", function () awful.layout.inc(-1)                end,
+    awful.key({ altkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
     awful.key({ altkey, "Shift" }, "m",

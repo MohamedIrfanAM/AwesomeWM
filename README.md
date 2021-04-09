@@ -148,9 +148,9 @@ ctr + alt +jk --- increase/decrease gaps
 
 **• layout**
 
-ctrl + tab -- switch layout
+ctrl + alt + space -- switch layout
 
-ctrl + shift+ tab -- reverse swith layout
+shift + alt + space -- reverse swith layout
 
 super + space -- toggle floating mode of focused and super + drag
 
