@@ -872,6 +872,9 @@ awful.rules.rules = {
     { rule = { class = "VirtualBox Manager" },
           properties = { maximized = true } },
 
+    { rule = { class = "chrome" },
+          properties = { floating = true } },
+
     { rule = { class = "VirtualBox Machine" },
           properties = { maximized = true } },
 
@@ -898,6 +901,7 @@ awful.rules.rules = {
           "Font-manager",
           "Kruler",
           "krunner",
+          "chromium",
           "MessageWin",  -- kalarm.
           "Oblogout",
           "Peek",
