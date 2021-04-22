@@ -872,9 +872,6 @@ awful.rules.rules = {
     { rule = { class = "VirtualBox Manager" },
           properties = { maximized = true } },
 
-    { rule = { class = "chrome" },
-          properties = { floating = true } },
-
     { rule = { class = "VirtualBox Machine" },
           properties = { maximized = true } },
 
@@ -901,7 +898,6 @@ awful.rules.rules = {
           "Font-manager",
           "Kruler",
           "krunner",
-          "chromium",
           "MessageWin",  -- kalarm.
           "Oblogout",
           "Peek",
@@ -915,6 +911,7 @@ awful.rules.rules = {
 
         name = {
           "Event Tester",  -- xev.
+          "Chat",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
@@ -1000,14 +997,14 @@ function border_adjust(c)
         c.border_color = beautiful.border_focus
     end
     if client.focus and c.floating then
-        c.border_color = "#ff0000"
+        c.border_color = "#FF1A00"
         c.border_width = beautiful.border_width
     end
 end
 
 function floating_adjust(c)
     if client.focus and c.floating then
-        c.border_color = "#ff0000"
+        c.border_color = "#FF1A00"
         c.border_width = beautiful.border_width
     elseif client.focus then
         c.border_width = beautiful.border_width
