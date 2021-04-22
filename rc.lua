@@ -114,7 +114,7 @@ local virtualmachine    = "virtualbox"
 -- awesome variables
 awful.util.terminal = terminal
 --awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
-awful.util.tagnames = { " 1  ", " 2  ", " 3  ", " 4  ", " 5  ", " 6  ", " 7  ", " 8  ", " 9  " }
+awful.util.tagnames = { " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,
@@ -1001,10 +1001,21 @@ function border_adjust(c)
     end
 end
 
+function floating_adjust(c)
+    if c.floating then
+        c.border_color = "#ff0000"
+        c.border_width = beautiful.border_width
+    else
+        c.border_width = beautiful.border_width
+        c.border_color = beautiful.border_focus
+    end
+end
 
 client.connect_signal("focus", border_adjust)
 client.connect_signal("property::maximized", border_adjust)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+client.connect_signal("unfocus", function(c) c.opacity = 1 end)
+client.connect_signal("property::floating",floating_adjust) 
 
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf")
