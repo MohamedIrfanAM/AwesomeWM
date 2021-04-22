@@ -999,15 +999,22 @@ function border_adjust(c)
         c.border_width = beautiful.border_width
         c.border_color = beautiful.border_focus
     end
+    if client.focus and c.floating then
+        c.border_color = "#ff0000"
+        c.border_width = beautiful.border_width
+    end
 end
 
 function floating_adjust(c)
-    if c.floating then
+    if client.focus and c.floating then
         c.border_color = "#ff0000"
         c.border_width = beautiful.border_width
-    else
+    elseif client.focus then
         c.border_width = beautiful.border_width
         c.border_color = beautiful.border_focus
+    else
+        c.border_width = beautiful.border_width
+        c.border_color = beautiful.border_normal
     end
 end
 
