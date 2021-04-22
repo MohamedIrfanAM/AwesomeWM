@@ -248,7 +248,7 @@ globalkeys = my_table.join(
     -- dmenu
     awful.key({ altkey, }, "space",
     function ()
-        awful.spawn(string.format("dmenu_run -c -l 15 -p @irfan -nb '#414654' -nf '#0080FF' -sb '#0080FF' -sf black -nhb '#414654' -nhf black -shb blue -shf black",
+        awful.spawn(string.format("dmenu_run -c -l 15 -p @irfan -nb '#414654' -nf '#53adcb' -sb '#53adcb' -sf black -nhb '#414654' -nhf black -shb '#53adcb' -shf black",
         beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
 	end,
     {description = "show dmenu", group = "hotkeys"}),
