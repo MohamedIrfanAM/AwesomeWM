@@ -643,7 +643,7 @@ clientkeys = my_table.join(
               {description = "close", group = "hotkeys"}),
     awful.key({ altkey }, "q",      function (c) c:kill()                                    end,
               {description = "close", group = "hotkeys"}),
-    awful.key({ "Shift" }, "space",  awful.client.floating.toggle                       ,
+    awful.key({ modkey }, "space",  awful.client.floating.toggle                       ,
               {description = "toggle floating of focused", group = "client"}),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
@@ -671,12 +671,7 @@ clientkeys = my_table.join(
       c:raise()
     end,
     {description = "swap with left client", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "l", function (c)
-      awful.client.swap.global_bydirection("right")
-      c:raise()
-    end,
-    {description = "swap with right client", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "j", function (c)
+    awful.key({ modkey, "Shift"   }, "l", function (c) awful.client.swap.global_bydirection("right") c:raise() end, {description = "swap with right client", group = "client"}), awful.key({ modkey, "Shift"   }, "j", function (c)
       awful.client.swap.global_bydirection("down")
       c:raise()
     end,
@@ -996,14 +991,14 @@ function border_adjust(c)
         c.border_width = beautiful.border_width
         c.border_color = beautiful.border_focus
     end
-    if client.focus and c.floating then
+    if client.focus and c.floating and not c.maximized then
         c.border_color = "#FF1A00"
         c.border_width = beautiful.border_width
     end
 end
 
 function floating_adjust(c)
-    if client.focus and c.floating then
+    if client.focus and c.floating and not c.maximized then
         c.border_color = "#FF1A00"
         c.border_width = beautiful.border_width
     elseif client.focus then
