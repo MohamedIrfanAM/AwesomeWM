@@ -181,6 +181,8 @@ super + control + hjkl -- resize
 super + alt + hjkl -- move in all four direction
 
 super + alt + shift + hjkl -- move in all four direction with double steps
+
+super + alt + ctrl + hjkl -- move in all four direction with double steps
 **• Pop UP**
 
 right-click to remove notification and left to take that notification
