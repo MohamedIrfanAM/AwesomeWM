@@ -728,7 +728,35 @@ clientkeys = my_table.join(
     {description = "Floating Move Left", group = "client"}),
     awful.key({ modkey, altkey }, "l", function (c)
       c:relative_move( 25,   0,   0,   0) end,
-    {description = "Floating Move Right", group = "client"})
+    {description = "Floating Move Right", group = "client"}),
+
+    -- Moving floating windows -- more with shift
+    awful.key({ modkey,altkey,"Shift" }, "j", function (c)
+      c:relative_move(  0,  60,   0,   0) end,
+    {description = "Floating Move Down with shift", group = "client"}),
+    awful.key({ modkey, altkey,"Shift" }, "k", function (c)
+      c:relative_move(  0, -60,   0,   0) end,
+    {description = "Floating Move Up with shift", group = "client"}),
+    awful.key({ modkey, altkey,"Shift"   }, "h", function (c)
+      c:relative_move(-60,   0,   0,   0) end,
+    {description = "Floating Move Left with shift", group = "client"}),
+    awful.key({ modkey, altkey,"Shift" }, "l", function (c)
+      c:relative_move( 60,   0,   0,   0) end,
+    {description = "Floating Move Right with shift", group = "client"}),
+
+    -- Moving floating windows -- more with ctrl
+    awful.key({ modkey,altkey,modkey1 }, "j", function (c)
+      c:relative_move(  0,  60,   0,   0) end,
+    {description = "Floating Move Down with ctrl", group = "client"}),
+    awful.key({ modkey, altkey,modkey1 }, "k", function (c)
+      c:relative_move(  0, -60,   0,   0) end,
+    {description = "Floating Move Up with ctrl", group = "client"}),
+    awful.key({ modkey, altkey,modkey1   }, "h", function (c)
+      c:relative_move(-60,   0,   0,   0) end,
+    {description = "Floating Move Left with ctrl", group = "client"}),
+    awful.key({ modkey, altkey,modkey1 }, "l", function (c)
+      c:relative_move( 60,   0,   0,   0) end,
+    {description = "Floating Move Right with ctrl", group = "client"})
 )
 
 
