@@ -931,6 +931,8 @@ awful.rules.rules = {
           "System-config-printer.py",
           "Unetbootin.elf",
           "Wpa_gui",
+          "gnome-screenshot",
+          "Gnome-screenshot",
           "pinentry",
           "veromix",
           "xtightvncviewer"},
