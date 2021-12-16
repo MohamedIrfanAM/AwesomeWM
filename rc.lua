@@ -267,6 +267,9 @@ globalkeys = my_table.join(
     awful.key({ altkey, "Control"  }, "c", function () awful.util.spawn( "/.dmenu/dmscripts/dmscrot" ) end,
         {description = "Screen Shot" , group = "dmenu scripts" }),
 
+    -- ScreenShot
+    awful.key({ }, "Insert", function () awful.util.spawn_with_shell("sleep 0.1 && gnome-screenshot -acf /tmp/test && cat /tmp/test | xclip -i -selection clipboard -target image/png") end), 
+    awful.key({ }, "Print", function () awful.util.spawn("gnome-screenshot -i") end), 
     -- -- My applications (Super+Alt+Key)
     -- awful.key({ modkey, altkey }, "a", function () awful.util.spawn( terminal.." -e ncpamixer" ) end,
     --     {description = "ncpamixer" , group = "terminal apps" }),
