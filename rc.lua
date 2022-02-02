@@ -708,6 +708,10 @@ awful.rules.rules = {
     { rule = { instance = "qutebrowser" },
           properties = { screen = 1, tag = " SYS " } },
 
+    { rule = { class = "Zathura" },
+          properties = { focus = false} ,
+          callback = awful.client.setslave,
+    },
 
     -- Floating clients.
     { rule_any = {
@@ -854,5 +858,5 @@ awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("blueman-applet")
-awful.spawn.with_shell("volumeicon")
+-- awful.spawn.with_shell("volumeicon")
 awful.spawn.with_shell("xinput set-prop 'ETPS/2 Elantech Touchpad' 311 1")
