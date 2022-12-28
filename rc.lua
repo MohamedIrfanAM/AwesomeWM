@@ -101,7 +101,7 @@ local altkey       = "Mod1"
 local modkey1      = "Control"
 
 -- personal variables
-local browser           = "brave"
+local browser           = "chromium"
 local editor            = "nvim"
 local editorgui         = "code"
 local filemanager       = "dolphin"
@@ -855,8 +855,5 @@ client.connect_signal("unfocus", function(c) c.opacity = 1 end)
 client.connect_signal("property::floating",floating_adjust) 
 
 awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf")
-awful.spawn.with_shell("nm-applet")
-awful.spawn.with_shell("blueman-applet")
--- awful.spawn.with_shell("volumeicon")
-awful.spawn.with_shell("xinput set-prop 'ETPS/2 Elantech Touchpad' 311 1")
+awful.spawn.with_shell("chromium https://codeforces.com/contests & sleep 1.5 &&  kitty /home/irfan/cp")
+--[[ --awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf") ]]
